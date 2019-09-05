@@ -38,7 +38,14 @@ public class HomeActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.item_adduser:
 
+                break;
+            case R.id.item_listgroup:
+                
+                break;
+        }
         return super.onOptionsItemSelected(item);
     }
 }

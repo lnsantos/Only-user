@@ -16,7 +16,8 @@ import java.util.List;
 
 public class HomeGroupAdapter extends RecyclerView.Adapter<HomeGroupAdapter.GroupHolder> {
 
-    List<Group> groups;
+    private List<Group> groups;
+
     public HomeGroupAdapter(List<Group> groups) {
         this.groups = groups;
     }
@@ -29,9 +30,7 @@ public class HomeGroupAdapter extends RecyclerView.Adapter<HomeGroupAdapter.Grou
 
     @Override
     public void onBindViewHolder(@NonNull GroupHolder holder, int position) {
-        Group g = groups.get(position);
-        Integer acount = g.getUsers().size();
-        holder.text.setText(g.getName() + "( "+ acount + " )");
+      holder.bindView(groups.get(position));
     }
 
     @Override
@@ -47,9 +46,13 @@ public class HomeGroupAdapter extends RecyclerView.Adapter<HomeGroupAdapter.Grou
         public GroupHolder(@NonNull View itemView) {
             super(itemView);
 
-            this.text.findViewById(R.id.txt_namegrupo);
-            this.img.findViewById(R.id.img_direction);
+            text = itemView.findViewById(R.id.txt_namegrupo);
+            img = itemView.findViewById(R.id.img_direction);
+        }
 
+        public void bindView(Group group){
+            Integer acount = group.getUsers().size();
+            text.setText(group.getName() + "( "+ acount + " )");
         }
 
     }
