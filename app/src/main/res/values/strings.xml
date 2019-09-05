@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">Only user</string>
+
+    <string name="main_layout_username">Your username</string>
+    <string name="main_layout_password">******</string>
+    <string name="main_layout_email">Ex:.onlyuser@user.com</string>
+
+    <string name="main_button_access">Log In</string>
+
+    <string name="back_main_username_vazio">Porfavor, insira seu username </string>
+    <string name="back_main_password_vazio">Porfavor, insira sua senha</string>
+
+</resources>
