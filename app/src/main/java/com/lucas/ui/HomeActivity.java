@@ -17,6 +17,8 @@ public class HomeActivity extends AppCompatActivity {
 
     Toolbar toolbar;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +45,7 @@ public class HomeActivity extends AppCompatActivity {
 
                 break;
             case R.id.item_listgroup:
-                
+
                 break;
         }
         return super.onOptionsItemSelected(item);

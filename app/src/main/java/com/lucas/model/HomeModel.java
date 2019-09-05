@@ -1,4 +1,6 @@
 package com.lucas.model;
 
-public class HomeModel {
+import com.lucas.contract.HomeActivityContract;
+
+public class HomeModel implements HomeActivityContract.Model {
 }

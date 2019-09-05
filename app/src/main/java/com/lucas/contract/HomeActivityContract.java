@@ -4,12 +4,10 @@ public interface HomeActivityContract {
 
     interface View{
 
-
     }
 
     interface Presenter{
-
-
+        
     }
 
     interface Model{
