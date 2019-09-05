@@ -5,6 +5,8 @@ import android.content.Intent;
 import com.lucas.R;
 import com.lucas.contract.MainActivityContract;
 import com.lucas.model.domain.User;
+import com.lucas.ui.HomeActivity;
+import com.lucas.ui.MainActivity;
 
 public class MainActivityPresenter implements MainActivityContract.Presenter, MainActivityContract.Model.Callback {
 
@@ -43,7 +45,7 @@ public class MainActivityPresenter implements MainActivityContract.Presenter, Ma
 
     @Override
     public void onResultLogin(User user) {
-        view.showMessage("Wellcome ");
+        view.goHomeActivity();
     }
 
     @Override

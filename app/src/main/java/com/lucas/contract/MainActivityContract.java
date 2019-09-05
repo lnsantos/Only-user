@@ -20,6 +20,7 @@ public interface MainActivityContract {
         void setErrorUsername(String error);
         void setErrorPassword(String error);
 
+        void goHomeActivity();
     }
 
     interface Presenter{

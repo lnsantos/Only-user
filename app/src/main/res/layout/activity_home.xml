@@ -7,11 +7,12 @@
     tools:context=".ui.HomeActivity"
     android:background="@color/colorBackgroundDefault">
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
+        <include layout="@layout/toolbar" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

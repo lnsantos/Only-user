@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.lucas.R;
+
 import com.lucas.component.DaggerMainActivityComponent;
 import com.lucas.contract.MainActivityContract;
 
@@ -97,5 +98,11 @@ public class MainActivity extends AppCompatActivity implements MainActivityContr
     @Override
     public void setPassword() {
 
+    }
+
+    @Override
+    public void goHomeActivity() {
+        Intent screen = new Intent(this, HomeActivity.class);
+        startActivity(screen);
     }
 }

@@ -7,9 +7,9 @@ import com.lucas.ui.MainActivity;
 
 import dagger.Component;
 
-@Component( modules = {MainActivityModule.class, HomeActivityModule.class})
+@Component( modules = {MainActivityModule.class})
 public interface MainActivityComponent {
 
     void inject(MainActivity mainActivity);
-    void inject(HomeActivity homeActivity);
+    // void inject(HomeActivity homeActivity);
 }
